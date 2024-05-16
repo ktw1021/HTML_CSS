@@ -11,6 +11,112 @@
 
     <!-- 가상의 멤버십 서비스를 가정하고 가입 폼을 만들어 봅시다 -->
 
+<form action = "a" method = "post">
+    <!-- action: 입력된 데이터를 전송할 서버의 페이지(주소)
+        기본값 - 자기 자신
+    method: 입력된 데이터를 전송할 방법 (GET, POST)
+        기본값 - GET-->
+        <fieldset> <!-- 입력 양식의 그룹 -->
+            <legend>회원 정보</legend><!-- 입력 양식 그룹의 제목 -->
+            <label for = "username"> 사용자 이름: </label>
+            <input type = "text" name = "username" id = "username" required /><br>
+
+            <label for = "email"> 사용자 이메일: </label>
+            <input type = "email" name = "email" id = "email" required /> <br />
+            <label for = "password">비밀번호: </label>
+            <input type = "password" name = "password" id = "password" required /> <br />
+
+            <label for = "password_confirm">비밀번호 확인</label>
+            <input type = "password" name = "password_confirm" id = "password_confirm" /> <br />
+
+            <!-- radio: 여러 개 중에서 한 개만 선택-->
+            <label> 성별 </label>
+            <input type = "radio" name = "gender" id = "male" value = "M" checked />
+            <label for = "male">남성</label>
+            <input type = "radio" name = "gender" id = "female" value = "F" />
+            <label for = "female"> 여성 </label> <br />
+
+            <!-- checkbox: 여러 개 중 복수 선택 -->
+            <label>선호음료</label>
+            <input type = "checkbox" name = "fav" id = "am" value = "am" />
+            <label for = "am">아메리카노</label>
+            <input type = "checkbox" name = "fav" id = "lt" value = "lt" />
+            <label for = "lt">라떼</label><br />
+
+            <!-- SELECT: 여러 개의 option 중에서 선택할 수 있는 선택박스 -->
+            <label> 통신사</label>
+            <select name = "telecom">
+                <option value = "S" selected> SKT </option>
+                <option value = "K"> KT</option>
+                <option value = "L"> LGT</option>
+                <option value = "E"> 기타</option>
+            </select>
+            <br>
+            <!-- 여러 줄 텍스트 입력 -->
+            <textarea cols = "80" rows = "10"></textarea>
+<br>
+            <input type = "checkbox" name = "terms" id = "terms" required />
+            <label for = "terms"> 이용약관에 동의합니다. </label>
+<br>
+            <!-- 전송 or 새로 작성 -->
+            <input type = "submit" value = "가입하기" />
+            <input type = "reset" value = "다시 작성" />
+        </fieldset>
+</form>
+
+
+
+<form method="POST"
+    action = "search.php">
+    <input type = "text" name = "userid" /> <br>
+    <input type = "password" name = "password" /> <br>
+    <input type = "file" name = "sub_file" /> <br>
+    <input type = "checkbox" name = "box" value = "dog" checked> 개 <br>
+    <input type = "checkbox" name = "box" value = "cat" checked> 고양이 <br>
+    <input type = "checkbox" name = "box" value = "bird"> 새 <br>
+    <input type = "radio" name = "fruit" value = "apple"> 사과 <br>
+    <input type = "radio" name = "fruit" value = "grape" checked> 포도 <br>
+    <input type = "hidden" value = "secret_key" /> <br>
+    <input type = "button" value = "My Button" /> <br>
+    <input type = "submit" value = "전송" />
+</form>
+
+<textarea name = "content" rows = "10" cols = "30"> </textarea>
+<input type = "submit" value = "전송" />
+
+<select name = "telecom">
+        <option value = "S">SKT</option>
+        <option value = "K">KT</option>
+        <option value = "L">LGT</option>
+        <option value = "E">기타</option>
+</select>
+
+<form>
+    <fieldset>
+        <legend>로그인</legend>
+        <label for = "account"> 계정 </label>
+        <input type = "text" name = "account">
+        <label for = "password"> 비밀번호 </label>
+        <input type = "submit" value = "로그인">
+    </fieldset>
+</form>
+
+<form method="POST"
+    action = "search.php">
+    <input type = "text" name = "keyword" />
+    <input type = "submit" value = "가자!" />
+</form>
+<form method="POST"
+    action = "search.php">
+    <input type = "text" name = "keyword" />
+    <input type = "submit" value = "가자!" />
+</form>
+<form method="POST"
+    action = "search.php">
+    <input type = "text" name = "keyword" />
+    <input type = "submit" value = "가자!" />
+</form>
+
 </body>
 
 </html>
