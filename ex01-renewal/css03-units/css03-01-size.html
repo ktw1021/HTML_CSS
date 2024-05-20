@@ -3,11 +3,79 @@
 
 <head>
     <title>CSS 크기 단위 실습</title>
+
+    <style>
+        /* li:nth-child(1) {}
+        li:nth-child(2) {font-size: 16px;}
+        li:nth-child(3) {font-size: 24px;}
+        li:nth-child(4) {font-size: 32px;}
+         */
+        /* li:nth-child(1) {}
+        li:nth-child(2) {font-size: 100%;}
+        li:nth-child(3) {font-size: 150%;}
+        li:nth-child(4) {font-size: 200%;}
+
+        상대 단위: rem(배수) 
+        em: 부모의 size 기준
+        rem: 최상위 요소(html)의 size 기준
+         */
+        /* li:nth-child(1) {}
+        li:nth-child(2) {font-size: 1.0em;}
+        li:nth-child(3) {font-size: 1.5em;}
+        li:nth-child(4) {font-size: 2.0em;}
+         */
+        li:nth-child(1) {}
+        li:nth-child(2) {font-size: 1.0rem;}
+        li:nth-child(3) {font-size: 1.5rem;}
+        li:nth-child(4) {font-size: 2.0rem;}
+
+    /* 표시 용도의 CSS */
+    div[class] {
+        border: 1px solid red;
+    }
+    /* 픽셀 단위 */
+    .pixel-box {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        margin-bottom: 10px;
+    }
+    /* 백분율 단위 */
+    .percent-box {
+        height: 100px;
+        width: 50%; /* 상대 단위 */
+        background-color: lightgreen;
+        margin-bottom: 10px;
+    }
+    /* em 단위 */
+    .em-box {
+        width: 10em; 
+        height: 5em;
+        background-color: lightcoral;
+        margin-bottom: 10px;
+    }
+    /* rem 단위 */
+    .rem-box {
+        width: 10rem;
+        height: 5rem;
+        background-color: lightyellow;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    </style>
+
 </head>
 
 <body>
 
     <h1>CSS 크기 단위 실습</h1>
+
+<ul>
+    <li>CSS로 크기를 지정해봅시다.</CSS></li>
+    <li>CSS로 크기를 지정해봅시다.</CSS></li>
+    <li>CSS로 크기를 지정해봅시다.</CSS></li>
+    <li>CSS로 크기를 지정해봅시다.</CSS></li>
+</ul>
 
     <div>
         <h2>텍스트</h2>
@@ -48,8 +116,11 @@
     <h2>Box</h2>
     <div class="pixel-box">픽셀(px) 단위</div>
     <div class="percent-box">백분율(%) 단위</div>
+    <div class="parent"
+        style="font-size: 20px;"
     <div class="em-box">em 단위</div>
     <div class="rem-box">rem 단위</div>
+    </div>
 </body>
 
 </html>
